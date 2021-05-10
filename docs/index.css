@@ -72,7 +72,7 @@ a {
 
 /* 탑바 */
 .con {
-    width: 1200px;
+    width: 1300px;
 }
 
 .top-bar {
@@ -80,17 +80,17 @@ a {
     color: #fbe0c4;
 }
 
-.top-bar>div:first-child {
+.top-bar>.con>div:first-child {
     width: 60px;
     padding: 20px;
 }
 
-.top-bar>div:nth-child(2) {
+.top-bar>.con>div:nth-child(2) {
     width: calc(100% - 660px);
     padding: 20px;
 }
 
-.top-bar>div:last-child {
+.top-bar>.con>div:last-child {
     width: 600px;
 }
 
