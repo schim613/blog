@@ -63,25 +63,34 @@ a {
     padding-right: 5px;
 }
 
+.con {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* 커스텀 */
 
 /* 탑바 */
+.con {
+    width: 1100px;
+}
+
 .top-bar {
     background-color: #0061a8;
     color: #fbe0c4;
 }
 
-.top-bar>div:first-child {
+.top-bar>.con>div:first-child {
     width: 60px;
     padding: 20px;
 }
 
-.top-bar>div:nth-child(2) {
+.top-bar>.con>div:nth-child(2) {
     width: calc(100% - 660px);
     padding: 20px;
 }
 
-.top-bar>div:last-child {
+.top-bar>.con>div:last-child {
     width: 600px;
 }
 
