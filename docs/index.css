@@ -63,9 +63,18 @@ a {
     padding-right: 5px;
 }
 
+.con {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* 커스텀 */
 
 /* 탑바 */
+.con {
+    width: 1200px;
+}
+
 .top-bar {
     background-color: #0061a8;
     color: #fbe0c4;
