@@ -99,6 +99,15 @@ a {
 .top-bar__logo:hover {
     font-size: 1.5rem;
 }
+
+.top-bar__title {
+    transition: color 2s;
+}
+
+.top-bar__title:hover {
+    color: #8ab6d6;
+}
+
 /* 탑바 끝*/
 
 /* 메뉴 시작 */
@@ -138,23 +147,30 @@ a {
     top: 0;
     left: 100%;
 }
+
 /* 메뉴 끝 */
 
 /* work-list-box 시작*/
-.work-list-box > ul > li {
-    width: 25%;
+.work-list-box>ul>li {
+    width: calc((100% - (4 - 1) * 10px) / 4);
+    margin-top: 10px
 }
 
-.work-list-box > ul > li > img {
+.work-list-box>ul>li:not(:nth-child(4n)) {
+    margin-right: 10px;
+}
+
+.work-list-box>ul>li>img {
     width: 100%;
     height: 300px;
     display: block;
-    object-fit:cover;
-    object-position:50% 50%;
+    object-fit: cover;
+    object-position: 50% 50%;
     transition: width 2s height 1s;
 }
 
-.work-list-box > ul > li > img:hover {
-    object-position:10% 50%;
+.work-list-box>ul>li>img:hover {
+    object-position: 10% 50%;
 }
+
 /* work-list-box 끝 */
