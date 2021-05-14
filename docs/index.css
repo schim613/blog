@@ -1,0 +1,222 @@
+/* 폰트 */
+@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: 'MaruBuri-Regular';
+}
+
+/* 노말라이즈 */
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 라이브러리 */
+.inline-grid {
+    font-size: 0;
+}
+
+.inline-grid>* {
+    font-size: 1rem;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.block {
+    display: block;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.top-bar__logo {
+    color: #8ab6d6;
+    padding-right: 5px;
+    font-size: 1.3rem;
+    transition: font-size 0.5s;
+}
+
+.top-bar__icon {
+    color: #8ab6d6;
+    padding-right: 5px;
+}
+
+.con {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-box>img {
+    display: block;
+    width: 100%;
+}
+
+/* 커스텀 */
+
+/* 탑바 시작 */
+.con {
+    width: 1200px;
+}
+
+.top-bar {
+    background-color: #0061a8;
+    color: #fbe0c4;
+    font-weight: bold;
+}
+
+.top-bar>.con>div:first-child {
+    width: 150px;
+    padding: 30px;
+}
+
+.top-bar>.con>div:nth-child(2) {
+    width: calc(100% - 750px);
+    padding: 30px;
+}
+
+.top-bar>.con>div:last-child {
+    width: 600px;
+}
+
+.top-bar__logo:hover {
+    font-size: 1.5rem;
+}
+
+.top-bar__title {
+    transition: color 2s;
+}
+
+.top-bar__title:hover {
+    color: #8ab6d6;
+}
+
+/* 탑바 끝*/
+
+/* 메뉴 시작 */
+.top-bar__menu-box-1 ul {
+    background-color: #0061a8;
+}
+
+.top-bar__menu-box-1 ul>li {
+    position: relative;
+}
+
+.top-bar__menu-box-1 ul>li>a {
+    display: block;
+    padding: 30px;
+    white-space: nowrap;
+    transition: color 1s;
+}
+
+.top-bar__menu-box-1 ul>li:hover>a {
+    background-color: #fbe0c4;
+    color: #0061a8;
+}
+
+.top-bar__menu-box-1>ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.top-bar__menu-box-1 ul>li:hover>ul {
+    display: block;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.top-bar__menu-box-1>ul ul ul {
+    top: 0;
+    left: 100%;
+}
+
+/* 메뉴 끝 */
+
+/* work-list-box 시작*/
+.work-list-box-0>ul>li>img {
+    margin-top: 20px;
+    object-fit: cover;
+}
+
+.work-list-box-1>ul {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.work-list-box-1>ul>li {
+    width: calc(100% / 3);
+    padding: 0 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.work-list-box-1>ul>li>div>.img-box {
+    position: relative;    
+    overflow: hidden;
+}
+
+.work-list-box-1>ul>li>div>.img-box > img {
+    z-index: -1;
+    position: relative;
+    transition: transform 1.5s;
+}
+
+.work-list-box-1>ul>li:hover>div>.img-box > img {
+    transform: scale(1.3);
+}
+
+.work-list-box-1>ul>li>div>.img-box > .bg {
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    transition: background-color 1.5s;
+}
+
+.work-list-box-1>ul>li:hover>div>.img-box > .bg {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.work-list-box-1>ul>li>div>.img-box > .view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translateX(-50%) translateY(-50%);
+    color:white;
+    font-size: 1.3rem;
+    border: 2px solid white;
+    border-radius: 7px;
+    padding: 7px 10px;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.work-list-box-1>ul>li:hover>div>.img-box > .view {
+    opacity: 1;
+}
+/* work-list-box 끝 */
