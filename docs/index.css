@@ -73,7 +73,7 @@ a {
 
 /* 탑바 시작 */
 .con {
-    width: 1100px;
+    width: 1200px;
 }
 
 .top-bar {
@@ -151,13 +151,15 @@ a {
 /* 메뉴 끝 */
 
 /* work-list-box 시작*/
-.work-list-box>ul>li {
-    width: calc((100% - (4 - 1) * 10px) / 4);
-    margin-top: 10px
+.work-list-box>ul {
+   margin-left:-10px;
+   margin-right:-10px;
 }
 
-.work-list-box>ul>li:not(:nth-child(4n)) {
-    margin-right: 10px;
+.work-list-box>ul>li {
+    width: 25%;
+    padding:0 10px;
+    margin-top:20px;
 }
 
 .work-list-box>ul>li>img {
@@ -166,11 +168,9 @@ a {
     display: block;
     object-fit: cover;
     object-position: 50% 50%;
-    transition: width 2s height 1s;
 }
 
 .work-list-box>ul>li>img:hover {
     object-position: 10% 50%;
 }
-
 /* work-list-box 끝 */
